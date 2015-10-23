@@ -1,0 +1,11 @@
+{
+  "name": "build",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build.js",
+  "author": "Sheenam Mittal, Jitesh Mohan, Shashanka Sharma",
+  "license": "GNU GPL",
+  "devDependencies": {
+    "node-curl": "^0.3.3"
+  }
+}

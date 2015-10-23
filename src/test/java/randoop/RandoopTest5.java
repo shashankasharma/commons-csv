@@ -11,638 +11,6 @@ public class RandoopTest5 extends TestCase {
     if (debug) System.out.printf("%nRandoopTest5.test1");
 
 
-    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var4 = var1.withSkipHeaderRecord(true);
-    org.apache.commons.csv.CSVFormat var6 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    java.lang.String var7 = var6.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var9 = var6.withNullString("");
-    org.apache.commons.csv.CSVFormat var10 = var6.withIgnoreEmptyLines();
-    java.lang.String[] var11 = var10.getHeaderComments();
-    org.apache.commons.csv.CSVFormat var13 = var10.withIgnoreSurroundingSpaces(false);
-    org.apache.commons.csv.CSVFormat var15 = var10.withRecordSeparator('4');
-    org.apache.commons.csv.CSVFormat.Predefined[] var16 = org.apache.commons.csv.CSVFormat.Predefined.values();
-    org.apache.commons.csv.CSVFormat var17 = var15.withHeaderComments((java.lang.Object[])var16);
-    org.apache.commons.csv.CSVFormat var18 = var1.withHeaderComments((java.lang.Object[])var16);
-    java.lang.String[] var19 = var1.getHeaderComments();
-    boolean var20 = var1.isNullStringSet();
-    boolean var21 = var1.isQuoteCharacterSet();
-    boolean var22 = var1.getIgnoreEmptyLines();
-    boolean var23 = var1.getAllowMissingColumnNames();
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var2);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var20 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var21 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var22 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var23 == false);
-
-  }
-
-  public void test2() throws Throwable {
-
-    if (debug) System.out.printf("%nRandoopTest5.test2");
-
-
-    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var3 = var1.withSkipHeaderRecord();
-    java.lang.String var4 = var3.toString();
-    org.apache.commons.csv.CSVFormat var6 = var3.withNullString("");
-    org.apache.commons.csv.CSVFormat var8 = var3.withIgnoreSurroundingSpaces(true);
-    org.apache.commons.csv.CSVFormat var9 = var8.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var10 = var8.withIgnoreSurroundingSpaces();
-    org.apache.commons.csv.CSVFormat var12 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    java.lang.String var13 = var12.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var15 = var12.withNullString("");
-    org.apache.commons.csv.CSVFormat var16 = var12.withIgnoreEmptyLines();
-    java.lang.String[] var17 = var16.getHeaderComments();
-    org.apache.commons.csv.CSVFormat var19 = var16.withIgnoreSurroundingSpaces(false);
-    org.apache.commons.csv.CSVFormat var21 = var19.withIgnoreSurroundingSpaces(false);
-    org.apache.commons.csv.CSVFormat var22 = var21.withSkipHeaderRecord();
-    org.apache.commons.csv.CSVFormat var24 = var22.withRecordSeparator("Default Excel MySQL RFC4180 TDF");
-    org.apache.commons.csv.CSVFormat var26 = var24.withCommentMarker((java.lang.Character)'4');
-    java.lang.Character var27 = var26.getQuoteCharacter();
-    boolean var28 = var26.getIgnoreHeaderCase();
-    org.apache.commons.csv.CSVFormat var30 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var31 = var30.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var32 = var30.withSkipHeaderRecord();
-    boolean var33 = var30.isCommentMarkerSet();
-    java.lang.Character var34 = var30.getQuoteCharacter();
-    org.apache.commons.csv.CSVFormat var35 = var30.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var37 = var30.withIgnoreEmptyLines(true);
-    org.apache.commons.csv.CSVFormat var39 = var30.withDelimiter(' ');
-    java.lang.String var40 = var30.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var42 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    java.lang.String var43 = var42.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var45 = var42.withRecordSeparator("hi!");
-    boolean var46 = var45.isCommentMarkerSet();
-    boolean var47 = var45.isEscapeCharacterSet();
-    org.apache.commons.csv.CSVFormat var49 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    java.lang.String var50 = var49.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var52 = var49.withCommentMarker('#');
-    org.apache.commons.csv.CSVFormat var54 = var49.withNullString("Delimiter=< > SkipHeaderRecord:true");
-    org.apache.commons.csv.CSVFormat var56 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    java.lang.String var57 = var56.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var59 = var56.withNullString("");
-    org.apache.commons.csv.CSVFormat var60 = var56.withIgnoreEmptyLines();
-    java.lang.String var61 = var60.toString();
-    org.apache.commons.csv.CSVFormat var63 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var64 = var63.withAllowMissingColumnNames();
-    boolean var65 = var63.isNullStringSet();
-    java.lang.String[] var67 = new java.lang.String[] { ""};
-    org.apache.commons.csv.CSVFormat var68 = var63.withHeader(var67);
-    org.apache.commons.csv.CSVFormat var69 = var60.withHeader(var67);
-    org.apache.commons.csv.CSVFormat var70 = var49.withHeader(var67);
-    org.apache.commons.csv.CSVFormat var71 = var45.withHeaderComments((java.lang.Object[])var67);
-    org.apache.commons.csv.CSVFormat var72 = var30.withHeaderComments((java.lang.Object[])var67);
-    org.apache.commons.csv.CSVFormat var73 = var26.withHeaderComments((java.lang.Object[])var67);
-    org.apache.commons.csv.CSVFormat var74 = var8.withHeader(var67);
-    java.lang.String var75 = var74.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var76 = var74.withSkipHeaderRecord();
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var2);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var3);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var4 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var4.equals("Delimiter=< > SkipHeaderRecord:true"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var16);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var21);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var28 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var31);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var33 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var34);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var39);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var40);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var42);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var43);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var46 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var47 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var49);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var50);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var52);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var54);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var56);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var57);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var59);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var60);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var61 + "' != '" + "Delimiter=< > EmptyLines:ignored SkipHeaderRecord:false"+ "'", var61.equals("Delimiter=< > EmptyLines:ignored SkipHeaderRecord:false"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var63);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var64);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var65 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var67);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var68);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var69);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var70);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var71);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var72);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var73);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var74);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var75);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var76);
-
-  }
-
-  public void test3() throws Throwable {
-
-    if (debug) System.out.printf("%nRandoopTest5.test3");
-
-
-    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat('4');
-    boolean var2 = var1.isEscapeCharacterSet();
-    java.lang.String var3 = var1.toString();
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var2 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var3 + "' != '" + "Delimiter=<4> SkipHeaderRecord:false"+ "'", var3.equals("Delimiter=<4> SkipHeaderRecord:false"));
-
-  }
-
-  public void test4() throws Throwable {
-
-    if (debug) System.out.printf("%nRandoopTest5.test4");
-
-
-    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var4 = var1.withSkipHeaderRecord(true);
-    boolean var5 = var1.isCommentMarkerSet();
-    org.apache.commons.csv.CSVFormat var7 = var1.withIgnoreSurroundingSpaces(false);
-    org.apache.commons.csv.CSVFormat var8 = var1.withAllowMissingColumnNames();
-    boolean var9 = var1.isCommentMarkerSet();
-    org.apache.commons.csv.CSVFormat var10 = var1.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var12 = var1.withAllowMissingColumnNames(false);
-    org.apache.commons.csv.CSVFormat var15 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    boolean var16 = var15.isCommentMarkerSet();
-    boolean var17 = var15.getIgnoreSurroundingSpaces();
-    org.apache.commons.csv.CSVParser var18 = org.apache.commons.csv.CSVParser.parse("", var15);
-    boolean var19 = var15.getSkipHeaderRecord();
-    java.lang.Character var20 = var15.getEscapeCharacter();
-    char var21 = var15.getDelimiter();
-    boolean var22 = var12.equals((java.lang.Object)var15);
-    org.apache.commons.csv.CSVFormat var24 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    java.lang.String var25 = var24.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var27 = var24.withNullString("");
-    org.apache.commons.csv.CSVFormat var28 = var24.withIgnoreEmptyLines();
-    org.apache.commons.csv.CSVFormat var30 = var28.withRecordSeparator('#');
-    org.apache.commons.csv.CSVFormat var32 = var30.withSkipHeaderRecord(false);
-    char var33 = var30.getDelimiter();
-    org.apache.commons.csv.CSVFormat var35 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    java.lang.String var36 = var35.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var38 = var35.withRecordSeparator("hi!");
-    boolean var39 = var38.isCommentMarkerSet();
-    java.lang.Character var40 = var38.getEscapeCharacter();
-    org.apache.commons.csv.CSVFormat var42 = var38.withAllowMissingColumnNames(true);
-    boolean var43 = var42.isQuoteCharacterSet();
-    org.apache.commons.csv.CSVFormat var45 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var46 = var45.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var47 = var45.withSkipHeaderRecord();
-    java.lang.String var48 = var47.toString();
-    org.apache.commons.csv.CSVFormat var50 = var47.withNullString("");
-    org.apache.commons.csv.CSVFormat var52 = var50.withEscape((java.lang.Character)'4');
-    org.apache.commons.csv.CSVFormat var54 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var55 = var54.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var56 = var54.withSkipHeaderRecord();
-    boolean var57 = var54.isCommentMarkerSet();
-    boolean var58 = var54.getIgnoreHeaderCase();
-    org.apache.commons.csv.CSVFormat var60 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    java.lang.String var61 = var60.getRecordSeparator();
-    org.apache.commons.csv.CSVFormat var63 = var60.withCommentMarker('#');
-    org.apache.commons.csv.CSVFormat var65 = var60.withNullString("Delimiter=< > SkipHeaderRecord:true");
-    org.apache.commons.csv.CSVFormat var66 = var65.withIgnoreSurroundingSpaces();
-    java.lang.Object[] var67 = new java.lang.Object[] { var65};
-    java.lang.String var68 = var54.format(var67);
-    java.lang.String[] var70 = new java.lang.String[] { "Default Excel MySQL RFC4180 TDF"};
-    org.apache.commons.csv.CSVFormat var71 = var54.withHeader(var70);
-    org.apache.commons.csv.CSVFormat var72 = var50.withHeader(var70);
-    java.lang.String var73 = var42.format((java.lang.Object[])var70);
-    java.lang.String var74 = var30.format((java.lang.Object[])var70);
-    org.apache.commons.csv.CSVFormat var75 = var12.withHeader(var70);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var2);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var5 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var9 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var12);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var16 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var17 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var19 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var21 == ' ');
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var22 == true);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var25);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var27);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var32);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var33 == ' ');
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var36);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var39 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var40);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var42);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var43 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var45);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var46);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var47);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var48 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var48.equals("Delimiter=< > SkipHeaderRecord:true"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var50);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var52);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var54);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var55);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var56);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var57 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var58 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var60);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var61);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var63);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var65);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var66);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var67);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var68 + "' != '" + "Delimiter=< > NullString=<Delimiter=< > SkipHeaderRecord:true> SkipHeaderRecord:false"+ "'", var68.equals("Delimiter=< > NullString=<Delimiter=< > SkipHeaderRecord:true> SkipHeaderRecord:false"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var70);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var71);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var72);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var73 + "' != '" + "Default Excel MySQL RFC4180 TDFhi!"+ "'", var73.equals("Default Excel MySQL RFC4180 TDFhi!"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var74 + "' != '" + "Default Excel MySQL RFC4180 TDF#"+ "'", var74.equals("Default Excel MySQL RFC4180 TDF#"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var75);
-
-  }
-
-  public void test5() throws Throwable {
-
-    if (debug) System.out.printf("%nRandoopTest5.test5");
-
-
-    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var4 = var1.withCommentMarker('a');
-    boolean var5 = var1.getIgnoreEmptyLines();
-    org.apache.commons.csv.CSVFormat var7 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var8 = var7.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var9 = var7.withSkipHeaderRecord();
-    boolean var10 = var7.isCommentMarkerSet();
-    boolean var11 = var7.getIgnoreHeaderCase();
-    org.apache.commons.csv.CSVFormat var13 = var7.withAllowMissingColumnNames(false);
-    org.apache.commons.csv.CSVFormat var15 = var13.withNullString("ALL MINIMAL NON_NUMERIC NONE");
-    org.apache.commons.csv.CSVFormat var17 = var15.withRecordSeparator("Delimiter=< > SkipHeaderRecord:true");
-    org.apache.commons.csv.QuoteMode[] var18 = org.apache.commons.csv.QuoteMode.values();
-    java.lang.String var19 = var17.format((java.lang.Object[])var18);
-    org.apache.commons.csv.CSVFormat var20 = var1.withHeaderComments((java.lang.Object[])var18);
-    boolean var21 = var1.isEscapeCharacterSet();
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var2);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var5 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var7);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var8);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var10 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var11 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var18);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var19 + "' != '" + "ALL MINIMAL NON_NUMERIC NONEDelimiter=< > SkipHeaderRecord:true"+ "'", var19.equals("ALL MINIMAL NON_NUMERIC NONEDelimiter=< > SkipHeaderRecord:true"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var20);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var21 == false);
-
-  }
-
-  public void test6() throws Throwable {
-
-    if (debug) System.out.printf("%nRandoopTest5.test6");
-
-
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
     java.lang.String var3 = var2.getRecordSeparator();
     org.apache.commons.csv.CSVFormat var5 = var2.withCommentMarker('#');
@@ -682,9 +50,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test7() throws Throwable {
+  public void test2() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test7");
+    if (debug) System.out.printf("%nRandoopTest5.test2");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -874,9 +242,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test8() throws Throwable {
+  public void test3() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test8");
+    if (debug) System.out.printf("%nRandoopTest5.test3");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -927,9 +295,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test9() throws Throwable {
+  public void test4() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test9");
+    if (debug) System.out.printf("%nRandoopTest5.test4");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1011,9 +379,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test10() throws Throwable {
+  public void test5() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test10");
+    if (debug) System.out.printf("%nRandoopTest5.test5");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1059,157 +427,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test11() throws Throwable {
+  public void test6() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test11");
-
-
-    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var4 = var1.withCommentMarker((java.lang.Character)'a');
-    boolean var5 = var4.getIgnoreEmptyLines();
-    java.lang.String[] var6 = var4.getHeaderComments();
-    java.lang.String var7 = var4.toString();
-    org.apache.commons.csv.CSVFormat var9 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var10 = var9.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var11 = var9.withSkipHeaderRecord();
-    boolean var12 = var9.isCommentMarkerSet();
-    java.lang.Character var13 = var9.getQuoteCharacter();
-    org.apache.commons.csv.CSVFormat var14 = var9.withSkipHeaderRecord();
-    java.lang.Character var15 = var14.getQuoteCharacter();
-    org.apache.commons.csv.CSVFormat var17 = var14.withIgnoreEmptyLines(true);
-    org.apache.commons.csv.CSVFormat var19 = var17.withEscape('4');
-    boolean var20 = var17.isCommentMarkerSet();
-    org.apache.commons.csv.CSVFormat var22 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var23 = var22.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var24 = var22.withSkipHeaderRecord();
-    org.apache.commons.csv.CSVFormat var26 = var24.withIgnoreSurroundingSpaces(true);
-    org.apache.commons.csv.CSVFormat var28 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var29 = var28.withAllowMissingColumnNames();
-    org.apache.commons.csv.CSVFormat var30 = var28.withSkipHeaderRecord();
-    java.lang.String var31 = var30.toString();
-    org.apache.commons.csv.CSVFormat var33 = var30.withNullString("");
-    org.apache.commons.csv.CSVFormat var35 = var30.withIgnoreSurroundingSpaces(true);
-    org.apache.commons.csv.CSVFormat var37 = org.apache.commons.csv.CSVFormat.newFormat(' ');
-    org.apache.commons.csv.CSVFormat var38 = var37.withAllowMissingColumnNames();
-    boolean var39 = var37.isNullStringSet();
-    java.lang.String[] var41 = new java.lang.String[] { ""};
-    org.apache.commons.csv.CSVFormat var42 = var37.withHeader(var41);
-    java.lang.String var43 = var35.format((java.lang.Object[])var41);
-    java.lang.String var44 = var26.format((java.lang.Object[])var41);
-    java.lang.String var45 = var17.format((java.lang.Object[])var41);
-    org.apache.commons.csv.CSVFormat var46 = var4.withHeader(var41);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var1);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var2);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var4);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var5 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var6);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var7 + "' != '" + "Delimiter=< > CommentStart=<a> SkipHeaderRecord:false"+ "'", var7.equals("Delimiter=< > CommentStart=<a> SkipHeaderRecord:false"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var9);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var10);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var11);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var12 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var13);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var14);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNull(var15);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var17);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var19);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var20 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var22);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var23);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var24);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var26);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var28);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var29);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var30);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var31 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var31.equals("Delimiter=< > SkipHeaderRecord:true"));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var33);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var35);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var37);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var38);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue(var39 == false);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var41);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var42);
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var43 + "' != '" + ""+ "'", var43.equals(""));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var44 + "' != '" + ""+ "'", var44.equals(""));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertTrue("'" + var45 + "' != '" + ""+ "'", var45.equals(""));
-    
-    // Regression assertion (captures the current behavior of the code)
-    assertNotNull(var46);
-
-  }
-
-  public void test12() throws Throwable {
-
-    if (debug) System.out.printf("%nRandoopTest5.test12");
+    if (debug) System.out.printf("%nRandoopTest5.test6");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1243,9 +463,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test13() throws Throwable {
+  public void test7() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test13");
+    if (debug) System.out.printf("%nRandoopTest5.test7");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1299,9 +519,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test14() throws Throwable {
+  public void test8() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test14");
+    if (debug) System.out.printf("%nRandoopTest5.test8");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1427,9 +647,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test15() throws Throwable {
+  public void test9() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test15");
+    if (debug) System.out.printf("%nRandoopTest5.test9");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1475,9 +695,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test16() throws Throwable {
+  public void test10() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test16");
+    if (debug) System.out.printf("%nRandoopTest5.test10");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1527,9 +747,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test17() throws Throwable {
+  public void test11() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test17");
+    if (debug) System.out.printf("%nRandoopTest5.test11");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1575,9 +795,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test18() throws Throwable {
+  public void test12() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test18");
+    if (debug) System.out.printf("%nRandoopTest5.test12");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1615,9 +835,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test19() throws Throwable {
+  public void test13() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test19");
+    if (debug) System.out.printf("%nRandoopTest5.test13");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1663,9 +883,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test20() throws Throwable {
+  public void test14() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test20");
+    if (debug) System.out.printf("%nRandoopTest5.test14");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1715,9 +935,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test21() throws Throwable {
+  public void test15() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test21");
+    if (debug) System.out.printf("%nRandoopTest5.test15");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1859,9 +1079,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test22() throws Throwable {
+  public void test16() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test22");
+    if (debug) System.out.printf("%nRandoopTest5.test16");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -1907,9 +1127,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test23() throws Throwable {
+  public void test17() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test23");
+    if (debug) System.out.printf("%nRandoopTest5.test17");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2071,9 +1291,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test24() throws Throwable {
+  public void test18() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test24");
+    if (debug) System.out.printf("%nRandoopTest5.test18");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2327,9 +1547,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test25() throws Throwable {
+  public void test19() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test25");
+    if (debug) System.out.printf("%nRandoopTest5.test19");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2487,9 +1707,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test26() throws Throwable {
+  public void test20() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test26");
+    if (debug) System.out.printf("%nRandoopTest5.test20");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2535,9 +1755,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test27() throws Throwable {
+  public void test21() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test27");
+    if (debug) System.out.printf("%nRandoopTest5.test21");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2583,9 +1803,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test28() throws Throwable {
+  public void test22() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test28");
+    if (debug) System.out.printf("%nRandoopTest5.test22");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2735,9 +1955,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test29() throws Throwable {
+  public void test23() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test29");
+    if (debug) System.out.printf("%nRandoopTest5.test23");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2783,9 +2003,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test30() throws Throwable {
+  public void test24() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test30");
+    if (debug) System.out.printf("%nRandoopTest5.test24");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2828,9 +2048,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test31() throws Throwable {
+  public void test25() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test31");
+    if (debug) System.out.printf("%nRandoopTest5.test25");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2872,9 +2092,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test32() throws Throwable {
+  public void test26() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test32");
+    if (debug) System.out.printf("%nRandoopTest5.test26");
 
 
     // The following exception was thrown during execution.
@@ -2888,9 +2108,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test33() throws Throwable {
+  public void test27() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test33");
+    if (debug) System.out.printf("%nRandoopTest5.test27");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2932,9 +2152,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test34() throws Throwable {
+  public void test28() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test34");
+    if (debug) System.out.printf("%nRandoopTest5.test28");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -2968,9 +2188,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test35() throws Throwable {
+  public void test29() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test35");
+    if (debug) System.out.printf("%nRandoopTest5.test29");
 
 
     // The following exception was thrown during execution.
@@ -2984,9 +2204,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test36() throws Throwable {
+  public void test30() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test36");
+    if (debug) System.out.printf("%nRandoopTest5.test30");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3032,9 +2252,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test37() throws Throwable {
+  public void test31() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test37");
+    if (debug) System.out.printf("%nRandoopTest5.test31");
 
 
     org.apache.commons.csv.CSVFormat var3 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3072,9 +2292,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test38() throws Throwable {
+  public void test32() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test38");
+    if (debug) System.out.printf("%nRandoopTest5.test32");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3124,9 +2344,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test39() throws Throwable {
+  public void test33() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test39");
+    if (debug) System.out.printf("%nRandoopTest5.test33");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3332,9 +2552,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test40() throws Throwable {
+  public void test34() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test40");
+    if (debug) System.out.printf("%nRandoopTest5.test34");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3376,9 +2596,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test41() throws Throwable {
+  public void test35() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test41");
+    if (debug) System.out.printf("%nRandoopTest5.test35");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3436,9 +2656,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test42() throws Throwable {
+  public void test36() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test42");
+    if (debug) System.out.printf("%nRandoopTest5.test36");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3505,9 +2725,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test43() throws Throwable {
+  public void test37() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test43");
+    if (debug) System.out.printf("%nRandoopTest5.test37");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3541,9 +2761,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test44() throws Throwable {
+  public void test38() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test44");
+    if (debug) System.out.printf("%nRandoopTest5.test38");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3597,9 +2817,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test45() throws Throwable {
+  public void test39() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test45");
+    if (debug) System.out.printf("%nRandoopTest5.test39");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat('#');
@@ -3837,9 +3057,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test46() throws Throwable {
+  public void test40() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test46");
+    if (debug) System.out.printf("%nRandoopTest5.test40");
 
 
     // The following exception was thrown during execution.
@@ -3853,9 +3073,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test47() throws Throwable {
+  public void test41() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test47");
+    if (debug) System.out.printf("%nRandoopTest5.test41");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -3893,9 +3113,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test48() throws Throwable {
+  public void test42() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test48");
+    if (debug) System.out.printf("%nRandoopTest5.test42");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4110,9 +3330,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test49() throws Throwable {
+  public void test43() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test49");
+    if (debug) System.out.printf("%nRandoopTest5.test43");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4154,9 +3374,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test50() throws Throwable {
+  public void test44() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test50");
+    if (debug) System.out.printf("%nRandoopTest5.test44");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4222,9 +3442,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test51() throws Throwable {
+  public void test45() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test51");
+    if (debug) System.out.printf("%nRandoopTest5.test45");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4362,9 +3582,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test52() throws Throwable {
+  public void test46() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test52");
+    if (debug) System.out.printf("%nRandoopTest5.test46");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4404,9 +3624,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test53() throws Throwable {
+  public void test47() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test53");
+    if (debug) System.out.printf("%nRandoopTest5.test47");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4468,9 +3688,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test54() throws Throwable {
+  public void test48() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test54");
+    if (debug) System.out.printf("%nRandoopTest5.test48");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4584,9 +3804,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test55() throws Throwable {
+  public void test49() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test55");
+    if (debug) System.out.printf("%nRandoopTest5.test49");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4632,9 +3852,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test56() throws Throwable {
+  public void test50() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test56");
+    if (debug) System.out.printf("%nRandoopTest5.test50");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4678,9 +3898,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test57() throws Throwable {
+  public void test51() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test57");
+    if (debug) System.out.printf("%nRandoopTest5.test51");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4838,9 +4058,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test58() throws Throwable {
+  public void test52() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test58");
+    if (debug) System.out.printf("%nRandoopTest5.test52");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat('#');
@@ -4878,9 +4098,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test59() throws Throwable {
+  public void test53() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test59");
+    if (debug) System.out.printf("%nRandoopTest5.test53");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4918,9 +4138,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test60() throws Throwable {
+  public void test54() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test60");
+    if (debug) System.out.printf("%nRandoopTest5.test54");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -4974,9 +4194,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test61() throws Throwable {
+  public void test55() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test61");
+    if (debug) System.out.printf("%nRandoopTest5.test55");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5014,9 +4234,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test62() throws Throwable {
+  public void test56() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test62");
+    if (debug) System.out.printf("%nRandoopTest5.test56");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5050,9 +4270,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test63() throws Throwable {
+  public void test57() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test63");
+    if (debug) System.out.printf("%nRandoopTest5.test57");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5102,9 +4322,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test64() throws Throwable {
+  public void test58() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test64");
+    if (debug) System.out.printf("%nRandoopTest5.test58");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5146,9 +4366,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test65() throws Throwable {
+  public void test59() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test65");
+    if (debug) System.out.printf("%nRandoopTest5.test59");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5187,9 +4407,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test66() throws Throwable {
+  public void test60() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test66");
+    if (debug) System.out.printf("%nRandoopTest5.test60");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5227,9 +4447,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test67() throws Throwable {
+  public void test61() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test67");
+    if (debug) System.out.printf("%nRandoopTest5.test61");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5287,9 +4507,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test68() throws Throwable {
+  public void test62() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test68");
+    if (debug) System.out.printf("%nRandoopTest5.test62");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5339,9 +4559,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test69() throws Throwable {
+  public void test63() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test69");
+    if (debug) System.out.printf("%nRandoopTest5.test63");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5383,9 +4603,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test70() throws Throwable {
+  public void test64() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test70");
+    if (debug) System.out.printf("%nRandoopTest5.test64");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5523,9 +4743,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test71() throws Throwable {
+  public void test65() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test71");
+    if (debug) System.out.printf("%nRandoopTest5.test65");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5559,9 +4779,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test72() throws Throwable {
+  public void test66() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test72");
+    if (debug) System.out.printf("%nRandoopTest5.test66");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5599,9 +4819,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test73() throws Throwable {
+  public void test67() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test73");
+    if (debug) System.out.printf("%nRandoopTest5.test67");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5631,9 +4851,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test74() throws Throwable {
+  public void test68() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test74");
+    if (debug) System.out.printf("%nRandoopTest5.test68");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5675,9 +4895,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test75() throws Throwable {
+  public void test69() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test75");
+    if (debug) System.out.printf("%nRandoopTest5.test69");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -5743,9 +4963,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test76() throws Throwable {
+  public void test70() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test76");
+    if (debug) System.out.printf("%nRandoopTest5.test70");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat('#');
@@ -5983,9 +5203,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test77() throws Throwable {
+  public void test71() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test77");
+    if (debug) System.out.printf("%nRandoopTest5.test71");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6023,9 +5243,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test78() throws Throwable {
+  public void test72() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test78");
+    if (debug) System.out.printf("%nRandoopTest5.test72");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6063,9 +5283,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test79() throws Throwable {
+  public void test73() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test79");
+    if (debug) System.out.printf("%nRandoopTest5.test73");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6107,9 +5327,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test80() throws Throwable {
+  public void test74() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test80");
+    if (debug) System.out.printf("%nRandoopTest5.test74");
 
 
     // The following exception was thrown during execution.
@@ -6123,9 +5343,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test81() throws Throwable {
+  public void test75() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test81");
+    if (debug) System.out.printf("%nRandoopTest5.test75");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6151,9 +5371,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test82() throws Throwable {
+  public void test76() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test82");
+    if (debug) System.out.printf("%nRandoopTest5.test76");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6399,9 +5619,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test83() throws Throwable {
+  public void test77() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test83");
+    if (debug) System.out.printf("%nRandoopTest5.test77");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6483,9 +5703,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test84() throws Throwable {
+  public void test78() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test84");
+    if (debug) System.out.printf("%nRandoopTest5.test78");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6683,9 +5903,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test85() throws Throwable {
+  public void test79() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test85");
+    if (debug) System.out.printf("%nRandoopTest5.test79");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6731,9 +5951,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test86() throws Throwable {
+  public void test80() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test86");
+    if (debug) System.out.printf("%nRandoopTest5.test80");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -6775,9 +5995,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test87() throws Throwable {
+  public void test81() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test87");
+    if (debug) System.out.printf("%nRandoopTest5.test81");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7015,9 +6235,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test88() throws Throwable {
+  public void test82() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test88");
+    if (debug) System.out.printf("%nRandoopTest5.test82");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7132,9 +6352,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test89() throws Throwable {
+  public void test83() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test89");
+    if (debug) System.out.printf("%nRandoopTest5.test83");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7240,9 +6460,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test90() throws Throwable {
+  public void test84() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test90");
+    if (debug) System.out.printf("%nRandoopTest5.test84");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7288,9 +6508,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test91() throws Throwable {
+  public void test85() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test91");
+    if (debug) System.out.printf("%nRandoopTest5.test85");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7348,9 +6568,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test92() throws Throwable {
+  public void test86() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test92");
+    if (debug) System.out.printf("%nRandoopTest5.test86");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7396,9 +6616,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test93() throws Throwable {
+  public void test87() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test93");
+    if (debug) System.out.printf("%nRandoopTest5.test87");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7444,9 +6664,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test94() throws Throwable {
+  public void test88() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test94");
+    if (debug) System.out.printf("%nRandoopTest5.test88");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7528,9 +6748,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test95() throws Throwable {
+  public void test89() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test95");
+    if (debug) System.out.printf("%nRandoopTest5.test89");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7582,9 +6802,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test96() throws Throwable {
+  public void test90() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test96");
+    if (debug) System.out.printf("%nRandoopTest5.test90");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7626,9 +6846,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test97() throws Throwable {
+  public void test91() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test97");
+    if (debug) System.out.printf("%nRandoopTest5.test91");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7682,9 +6902,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test98() throws Throwable {
+  public void test92() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test98");
+    if (debug) System.out.printf("%nRandoopTest5.test92");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7738,9 +6958,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test99() throws Throwable {
+  public void test93() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test99");
+    if (debug) System.out.printf("%nRandoopTest5.test93");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat('a');
@@ -7758,9 +6978,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test100() throws Throwable {
+  public void test94() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test100");
+    if (debug) System.out.printf("%nRandoopTest5.test94");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7786,9 +7006,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test101() throws Throwable {
+  public void test95() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test101");
+    if (debug) System.out.printf("%nRandoopTest5.test95");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7830,9 +7050,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test102() throws Throwable {
+  public void test96() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test102");
+    if (debug) System.out.printf("%nRandoopTest5.test96");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -7884,9 +7104,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test103() throws Throwable {
+  public void test97() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test103");
+    if (debug) System.out.printf("%nRandoopTest5.test97");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8096,9 +7316,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test104() throws Throwable {
+  public void test98() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test104");
+    if (debug) System.out.printf("%nRandoopTest5.test98");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8145,9 +7365,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test105() throws Throwable {
+  public void test99() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test105");
+    if (debug) System.out.printf("%nRandoopTest5.test99");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8193,9 +7413,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test106() throws Throwable {
+  public void test100() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test106");
+    if (debug) System.out.printf("%nRandoopTest5.test100");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8346,9 +7566,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test107() throws Throwable {
+  public void test101() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test107");
+    if (debug) System.out.printf("%nRandoopTest5.test101");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8410,9 +7630,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test108() throws Throwable {
+  public void test102() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test108");
+    if (debug) System.out.printf("%nRandoopTest5.test102");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8450,9 +7670,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test109() throws Throwable {
+  public void test103() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test109");
+    if (debug) System.out.printf("%nRandoopTest5.test103");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8494,9 +7714,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test110() throws Throwable {
+  public void test104() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test110");
+    if (debug) System.out.printf("%nRandoopTest5.test104");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8702,9 +7922,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test111() throws Throwable {
+  public void test105() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test111");
+    if (debug) System.out.printf("%nRandoopTest5.test105");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8778,9 +7998,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test112() throws Throwable {
+  public void test106() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test112");
+    if (debug) System.out.printf("%nRandoopTest5.test106");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -8970,9 +8190,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test113() throws Throwable {
+  public void test107() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test113");
+    if (debug) System.out.printf("%nRandoopTest5.test107");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9058,9 +8278,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test114() throws Throwable {
+  public void test108() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test114");
+    if (debug) System.out.printf("%nRandoopTest5.test108");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9102,9 +8322,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test115() throws Throwable {
+  public void test109() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test115");
+    if (debug) System.out.printf("%nRandoopTest5.test109");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9146,9 +8366,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test116() throws Throwable {
+  public void test110() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test116");
+    if (debug) System.out.printf("%nRandoopTest5.test110");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9242,9 +8462,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test117() throws Throwable {
+  public void test111() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test117");
+    if (debug) System.out.printf("%nRandoopTest5.test111");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9306,9 +8526,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test118() throws Throwable {
+  public void test112() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test118");
+    if (debug) System.out.printf("%nRandoopTest5.test112");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9342,9 +8562,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test119() throws Throwable {
+  public void test113() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test119");
+    if (debug) System.out.printf("%nRandoopTest5.test113");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9378,9 +8598,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test120() throws Throwable {
+  public void test114() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test120");
+    if (debug) System.out.printf("%nRandoopTest5.test114");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9422,9 +8642,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test121() throws Throwable {
+  public void test115() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test121");
+    if (debug) System.out.printf("%nRandoopTest5.test115");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9678,9 +8898,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test122() throws Throwable {
+  public void test116() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test122");
+    if (debug) System.out.printf("%nRandoopTest5.test116");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9714,9 +8934,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test123() throws Throwable {
+  public void test117() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test123");
+    if (debug) System.out.printf("%nRandoopTest5.test117");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9775,9 +8995,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test124() throws Throwable {
+  public void test118() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test124");
+    if (debug) System.out.printf("%nRandoopTest5.test118");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9863,9 +9083,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test125() throws Throwable {
+  public void test119() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test125");
+    if (debug) System.out.printf("%nRandoopTest5.test119");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -9983,9 +9203,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test126() throws Throwable {
+  public void test120() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test126");
+    if (debug) System.out.printf("%nRandoopTest5.test120");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10039,9 +9259,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test127() throws Throwable {
+  public void test121() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test127");
+    if (debug) System.out.printf("%nRandoopTest5.test121");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10081,9 +9301,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test128() throws Throwable {
+  public void test122() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test128");
+    if (debug) System.out.printf("%nRandoopTest5.test122");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10130,9 +9350,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test129() throws Throwable {
+  public void test123() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test129");
+    if (debug) System.out.printf("%nRandoopTest5.test123");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10182,9 +9402,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test130() throws Throwable {
+  public void test124() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test130");
+    if (debug) System.out.printf("%nRandoopTest5.test124");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10239,9 +9459,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test131() throws Throwable {
+  public void test125() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test131");
+    if (debug) System.out.printf("%nRandoopTest5.test125");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10451,9 +9671,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test132() throws Throwable {
+  public void test126() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test132");
+    if (debug) System.out.printf("%nRandoopTest5.test126");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10487,9 +9707,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test133() throws Throwable {
+  public void test127() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test133");
+    if (debug) System.out.printf("%nRandoopTest5.test127");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10531,9 +9751,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test134() throws Throwable {
+  public void test128() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test134");
+    if (debug) System.out.printf("%nRandoopTest5.test128");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10587,9 +9807,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test135() throws Throwable {
+  public void test129() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test135");
+    if (debug) System.out.printf("%nRandoopTest5.test129");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10716,9 +9936,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test136() throws Throwable {
+  public void test130() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test136");
+    if (debug) System.out.printf("%nRandoopTest5.test130");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -10988,9 +10208,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test137() throws Throwable {
+  public void test131() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test137");
+    if (debug) System.out.printf("%nRandoopTest5.test131");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11148,9 +10368,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test138() throws Throwable {
+  public void test132() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test138");
+    if (debug) System.out.printf("%nRandoopTest5.test132");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11193,9 +10413,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test139() throws Throwable {
+  public void test133() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test139");
+    if (debug) System.out.printf("%nRandoopTest5.test133");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11269,9 +10489,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test140() throws Throwable {
+  public void test134() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test140");
+    if (debug) System.out.printf("%nRandoopTest5.test134");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11305,9 +10525,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test141() throws Throwable {
+  public void test135() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test141");
+    if (debug) System.out.printf("%nRandoopTest5.test135");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11385,9 +10605,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test142() throws Throwable {
+  public void test136() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test142");
+    if (debug) System.out.printf("%nRandoopTest5.test136");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11425,9 +10645,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test143() throws Throwable {
+  public void test137() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test143");
+    if (debug) System.out.printf("%nRandoopTest5.test137");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11461,9 +10681,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test144() throws Throwable {
+  public void test138() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test144");
+    if (debug) System.out.printf("%nRandoopTest5.test138");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11509,9 +10729,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test145() throws Throwable {
+  public void test139() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test145");
+    if (debug) System.out.printf("%nRandoopTest5.test139");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11549,9 +10769,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test146() throws Throwable {
+  public void test140() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test146");
+    if (debug) System.out.printf("%nRandoopTest5.test140");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11581,9 +10801,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test147() throws Throwable {
+  public void test141() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test147");
+    if (debug) System.out.printf("%nRandoopTest5.test141");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11629,9 +10849,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test148() throws Throwable {
+  public void test142() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test148");
+    if (debug) System.out.printf("%nRandoopTest5.test142");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11678,9 +10898,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test149() throws Throwable {
+  public void test143() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test149");
+    if (debug) System.out.printf("%nRandoopTest5.test143");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11706,9 +10926,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test150() throws Throwable {
+  public void test144() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test150");
+    if (debug) System.out.printf("%nRandoopTest5.test144");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11754,9 +10974,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test151() throws Throwable {
+  public void test145() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test151");
+    if (debug) System.out.printf("%nRandoopTest5.test145");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11838,9 +11058,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test152() throws Throwable {
+  public void test146() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test152");
+    if (debug) System.out.printf("%nRandoopTest5.test146");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11866,9 +11086,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test153() throws Throwable {
+  public void test147() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test153");
+    if (debug) System.out.printf("%nRandoopTest5.test147");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11910,9 +11130,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test154() throws Throwable {
+  public void test148() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test154");
+    if (debug) System.out.printf("%nRandoopTest5.test148");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -11970,9 +11190,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test155() throws Throwable {
+  public void test149() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test155");
+    if (debug) System.out.printf("%nRandoopTest5.test149");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12018,9 +11238,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test156() throws Throwable {
+  public void test150() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test156");
+    if (debug) System.out.printf("%nRandoopTest5.test150");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12102,9 +11322,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test157() throws Throwable {
+  public void test151() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test157");
+    if (debug) System.out.printf("%nRandoopTest5.test151");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12258,9 +11478,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test158() throws Throwable {
+  public void test152() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test158");
+    if (debug) System.out.printf("%nRandoopTest5.test152");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12314,9 +11534,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test159() throws Throwable {
+  public void test153() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test159");
+    if (debug) System.out.printf("%nRandoopTest5.test153");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12374,9 +11594,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test160() throws Throwable {
+  public void test154() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test160");
+    if (debug) System.out.printf("%nRandoopTest5.test154");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12422,9 +11642,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test161() throws Throwable {
+  public void test155() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test161");
+    if (debug) System.out.printf("%nRandoopTest5.test155");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12566,9 +11786,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test162() throws Throwable {
+  public void test156() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test162");
+    if (debug) System.out.printf("%nRandoopTest5.test156");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12618,9 +11838,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test163() throws Throwable {
+  public void test157() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test163");
+    if (debug) System.out.printf("%nRandoopTest5.test157");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12682,9 +11902,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test164() throws Throwable {
+  public void test158() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test164");
+    if (debug) System.out.printf("%nRandoopTest5.test158");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12730,9 +11950,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test165() throws Throwable {
+  public void test159() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test165");
+    if (debug) System.out.printf("%nRandoopTest5.test159");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12774,9 +11994,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test166() throws Throwable {
+  public void test160() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test166");
+    if (debug) System.out.printf("%nRandoopTest5.test160");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12810,9 +12030,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test167() throws Throwable {
+  public void test161() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test167");
+    if (debug) System.out.printf("%nRandoopTest5.test161");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -12863,9 +12083,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test168() throws Throwable {
+  public void test162() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test168");
+    if (debug) System.out.printf("%nRandoopTest5.test162");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13007,9 +12227,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test169() throws Throwable {
+  public void test163() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test169");
+    if (debug) System.out.printf("%nRandoopTest5.test163");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat('#');
@@ -13103,9 +12323,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test170() throws Throwable {
+  public void test164() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test170");
+    if (debug) System.out.printf("%nRandoopTest5.test164");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13151,9 +12371,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test171() throws Throwable {
+  public void test165() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test171");
+    if (debug) System.out.printf("%nRandoopTest5.test165");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat('a');
@@ -13175,9 +12395,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test172() throws Throwable {
+  public void test166() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test172");
+    if (debug) System.out.printf("%nRandoopTest5.test166");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13215,9 +12435,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test173() throws Throwable {
+  public void test167() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test173");
+    if (debug) System.out.printf("%nRandoopTest5.test167");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13243,9 +12463,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test174() throws Throwable {
+  public void test168() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test174");
+    if (debug) System.out.printf("%nRandoopTest5.test168");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13311,9 +12531,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test175() throws Throwable {
+  public void test169() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test175");
+    if (debug) System.out.printf("%nRandoopTest5.test169");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13575,9 +12795,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test176() throws Throwable {
+  public void test170() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test176");
+    if (debug) System.out.printf("%nRandoopTest5.test170");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13607,9 +12827,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test177() throws Throwable {
+  public void test171() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test177");
+    if (debug) System.out.printf("%nRandoopTest5.test171");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13795,9 +13015,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test178() throws Throwable {
+  public void test172() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test178");
+    if (debug) System.out.printf("%nRandoopTest5.test172");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13883,9 +13103,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test179() throws Throwable {
+  public void test173() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test179");
+    if (debug) System.out.printf("%nRandoopTest5.test173");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13919,9 +13139,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test180() throws Throwable {
+  public void test174() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test180");
+    if (debug) System.out.printf("%nRandoopTest5.test174");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13955,9 +13175,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test181() throws Throwable {
+  public void test175() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test181");
+    if (debug) System.out.printf("%nRandoopTest5.test175");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -13991,9 +13211,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test182() throws Throwable {
+  public void test176() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test182");
+    if (debug) System.out.printf("%nRandoopTest5.test176");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14251,9 +13471,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test183() throws Throwable {
+  public void test177() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test183");
+    if (debug) System.out.printf("%nRandoopTest5.test177");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14295,9 +13515,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test184() throws Throwable {
+  public void test178() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test184");
+    if (debug) System.out.printf("%nRandoopTest5.test178");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14339,9 +13559,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test185() throws Throwable {
+  public void test179() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test185");
+    if (debug) System.out.printf("%nRandoopTest5.test179");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14499,9 +13719,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test186() throws Throwable {
+  public void test180() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test186");
+    if (debug) System.out.printf("%nRandoopTest5.test180");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14551,9 +13771,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test187() throws Throwable {
+  public void test181() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test187");
+    if (debug) System.out.printf("%nRandoopTest5.test181");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14735,9 +13955,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test188() throws Throwable {
+  public void test182() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test188");
+    if (debug) System.out.printf("%nRandoopTest5.test182");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14775,9 +13995,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test189() throws Throwable {
+  public void test183() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test189");
+    if (debug) System.out.printf("%nRandoopTest5.test183");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14843,9 +14063,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test190() throws Throwable {
+  public void test184() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test190");
+    if (debug) System.out.printf("%nRandoopTest5.test184");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14887,9 +14107,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test191() throws Throwable {
+  public void test185() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test191");
+    if (debug) System.out.printf("%nRandoopTest5.test185");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -14931,9 +14151,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test192() throws Throwable {
+  public void test186() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test192");
+    if (debug) System.out.printf("%nRandoopTest5.test186");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -15007,9 +14227,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test193() throws Throwable {
+  public void test187() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test193");
+    if (debug) System.out.printf("%nRandoopTest5.test187");
 
 
     org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -15052,9 +14272,9 @@ public class RandoopTest5 extends TestCase {
 
   }
 
-  public void test194() throws Throwable {
+  public void test188() throws Throwable {
 
-    if (debug) System.out.printf("%nRandoopTest5.test194");
+    if (debug) System.out.printf("%nRandoopTest5.test188");
 
 
     org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
@@ -15209,6 +14429,1311 @@ public class RandoopTest5 extends TestCase {
     
     // Regression assertion (captures the current behavior of the code)
     assertNotNull(var51);
+
+  }
+
+  public void test189() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test189");
+
+
+    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var2 = var1.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var4 = var1.withNullString("");
+    org.apache.commons.csv.CSVFormat var5 = var1.withIgnoreEmptyLines();
+    org.apache.commons.csv.CSVFormat var7 = var5.withRecordSeparator('#');
+    org.apache.commons.csv.CSVFormat var9 = var7.withSkipHeaderRecord(false);
+    org.apache.commons.csv.CSVFormat var11 = var7.withQuote('4');
+    java.lang.String var12 = var7.toString();
+    org.apache.commons.csv.CSVFormat var14 = var7.withEscape('4');
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var12 + "' != '" + "Delimiter=< > RecordSeparator=<#> EmptyLines:ignored SkipHeaderRecord:false"+ "'", var12.equals("Delimiter=< > RecordSeparator=<#> EmptyLines:ignored SkipHeaderRecord:false"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var14);
+
+  }
+
+  public void test190() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test190");
+
+
+    org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var3 = var2.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var5 = var2.withRecordSeparator("hi!");
+    boolean var6 = var5.isCommentMarkerSet();
+    java.lang.String[] var7 = var5.getHeader();
+    org.apache.commons.csv.CSVParser var8 = org.apache.commons.csv.CSVParser.parse("Delimiter=< > NullString=<Delimiter=< > SkipHeaderRecord:true> SkipHeaderRecord:false", var5);
+    java.util.Map var9 = var8.getHeaderMap();
+    long var10 = var8.getRecordNumber();
+    long var11 = var8.getRecordNumber();
+    var8.close();
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var6 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var10 == 0L);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var11 == 0L);
+
+  }
+
+  public void test191() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test191");
+
+
+    org.apache.commons.csv.CSVFormat var3 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    char var4 = var3.getDelimiter();
+    java.lang.String var5 = var3.getNullString();
+    boolean var6 = var3.getAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var7 = var3.withSkipHeaderRecord();
+    org.apache.commons.csv.CSVFormat var9 = var3.withEscape((java.lang.Character)'4');
+    org.apache.commons.csv.CSVParser var10 = org.apache.commons.csv.CSVParser.parse("Delimiter=< > NullString=<Delimiter=< > SkipHeaderRecord:true> SkipHeaderRecord:false", var9);
+    org.apache.commons.csv.CSVFormat var11 = var9.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var13 = var11.withQuote((java.lang.Character)'#');
+    org.apache.commons.csv.CSVParser var14 = org.apache.commons.csv.CSVParser.parse("Delimiter=< > SkipHeaderRecord:true", var11);
+    java.lang.Character var15 = var11.getQuoteCharacter();
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var4 == ' ');
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var6 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var15);
+
+  }
+
+  public void test192() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test192");
+
+
+    org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var3 = var2.withAllowMissingColumnNames();
+    boolean var4 = var2.isNullStringSet();
+    java.lang.String[] var6 = new java.lang.String[] { ""};
+    org.apache.commons.csv.CSVFormat var7 = var2.withHeader(var6);
+    org.apache.commons.csv.QuoteMode var8 = var7.getQuoteMode();
+    org.apache.commons.csv.CSVFormat var10 = var7.withIgnoreEmptyLines(false);
+    org.apache.commons.csv.CSVFormat var11 = var7.withSkipHeaderRecord();
+    boolean var12 = var7.getIgnoreEmptyLines();
+    org.apache.commons.csv.CSVParser var13 = org.apache.commons.csv.CSVParser.parse("Delimiter=< > EmptyLines:ignored SkipHeaderRecord:false", var7);
+    java.util.Map var14 = var13.getHeaderMap();
+    long var15 = var13.getCurrentLineNumber();
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var12 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var15 == 0L);
+
+  }
+
+  public void test193() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test193");
+
+
+    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var3 = var1.withSkipHeaderRecord();
+    org.apache.commons.csv.CSVFormat var5 = var3.withIgnoreSurroundingSpaces(true);
+    org.apache.commons.csv.CSVFormat var7 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var8 = var7.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var9 = var7.withSkipHeaderRecord();
+    java.lang.String var10 = var9.toString();
+    org.apache.commons.csv.CSVFormat var12 = var9.withNullString("");
+    org.apache.commons.csv.CSVFormat var14 = var9.withIgnoreSurroundingSpaces(true);
+    org.apache.commons.csv.CSVFormat var16 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var17 = var16.withAllowMissingColumnNames();
+    boolean var18 = var16.isNullStringSet();
+    java.lang.String[] var20 = new java.lang.String[] { ""};
+    org.apache.commons.csv.CSVFormat var21 = var16.withHeader(var20);
+    java.lang.String var22 = var14.format((java.lang.Object[])var20);
+    java.lang.String var23 = var5.format((java.lang.Object[])var20);
+    org.apache.commons.csv.CSVFormat var25 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var26 = var25.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var28 = var25.withNullString("");
+    org.apache.commons.csv.CSVFormat var29 = var25.withIgnoreEmptyLines();
+    java.lang.String[] var30 = var29.getHeaderComments();
+    org.apache.commons.csv.CSVFormat var32 = var29.withIgnoreSurroundingSpaces(false);
+    org.apache.commons.csv.CSVFormat var34 = var29.withRecordSeparator('4');
+    org.apache.commons.csv.CSVFormat var36 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var37 = var36.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var38 = var36.withSkipHeaderRecord();
+    boolean var39 = var36.isCommentMarkerSet();
+    boolean var40 = var36.getIgnoreHeaderCase();
+    java.lang.String[] var42 = new java.lang.String[] { "Delimiter=< > SkipHeaderRecord:true"};
+    org.apache.commons.csv.CSVFormat var43 = var36.withHeader(var42);
+    org.apache.commons.csv.CSVFormat var44 = var29.withHeaderComments((java.lang.Object[])var42);
+    java.lang.String var45 = var5.format((java.lang.Object[])var42);
+    boolean var46 = var5.getIgnoreEmptyLines();
+    org.apache.commons.csv.CSVFormat var48 = var5.withEscape((java.lang.Character)'a');
+    char var49 = var5.getDelimiter();
+    org.apache.commons.csv.CSVFormat var51 = var5.withEscape((java.lang.Character)'a');
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var10 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var10.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var18 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var22 + "' != '" + ""+ "'", var22.equals(""));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var23 + "' != '" + ""+ "'", var23.equals(""));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var30);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var34);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var36);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var38);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var39 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var40 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var42);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var43);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var44);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var45 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var45.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var46 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var48);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var49 == ' ');
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var51);
+
+  }
+
+  public void test194() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test194");
+
+
+    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
+    boolean var3 = var1.isNullStringSet();
+    boolean var4 = var1.getSkipHeaderRecord();
+    org.apache.commons.csv.CSVFormat var6 = var1.withCommentMarker((java.lang.Character)'4');
+    boolean var7 = var1.isNullStringSet();
+    org.apache.commons.csv.CSVFormat var8 = var1.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var10 = var8.withIgnoreSurroundingSpaces(false);
+    org.apache.commons.csv.CSVFormat var12 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var13 = var12.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var15 = var12.withCommentMarker((java.lang.Character)'a');
+    boolean var16 = var15.getIgnoreEmptyLines();
+    java.lang.String[] var17 = var15.getHeaderComments();
+    java.lang.String var18 = var15.toString();
+    org.apache.commons.csv.CSVFormat var20 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var21 = var20.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var22 = var20.withSkipHeaderRecord();
+    boolean var23 = var20.isCommentMarkerSet();
+    java.lang.Character var24 = var20.getQuoteCharacter();
+    org.apache.commons.csv.CSVFormat var25 = var20.withSkipHeaderRecord();
+    java.lang.Character var26 = var25.getQuoteCharacter();
+    org.apache.commons.csv.CSVFormat var28 = var25.withIgnoreEmptyLines(true);
+    org.apache.commons.csv.CSVFormat var30 = var28.withEscape('4');
+    boolean var31 = var28.isCommentMarkerSet();
+    org.apache.commons.csv.CSVFormat var33 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var34 = var33.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var35 = var33.withSkipHeaderRecord();
+    org.apache.commons.csv.CSVFormat var37 = var35.withIgnoreSurroundingSpaces(true);
+    org.apache.commons.csv.CSVFormat var39 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var40 = var39.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var41 = var39.withSkipHeaderRecord();
+    java.lang.String var42 = var41.toString();
+    org.apache.commons.csv.CSVFormat var44 = var41.withNullString("");
+    org.apache.commons.csv.CSVFormat var46 = var41.withIgnoreSurroundingSpaces(true);
+    org.apache.commons.csv.CSVFormat var48 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var49 = var48.withAllowMissingColumnNames();
+    boolean var50 = var48.isNullStringSet();
+    java.lang.String[] var52 = new java.lang.String[] { ""};
+    org.apache.commons.csv.CSVFormat var53 = var48.withHeader(var52);
+    java.lang.String var54 = var46.format((java.lang.Object[])var52);
+    java.lang.String var55 = var37.format((java.lang.Object[])var52);
+    java.lang.String var56 = var28.format((java.lang.Object[])var52);
+    org.apache.commons.csv.CSVFormat var57 = var15.withHeader(var52);
+    java.lang.String var58 = var8.format((java.lang.Object[])var52);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var3 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var7 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var16 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var18 + "' != '" + "Delimiter=< > CommentStart=<a> SkipHeaderRecord:false"+ "'", var18.equals("Delimiter=< > CommentStart=<a> SkipHeaderRecord:false"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var23 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var30);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var31 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var34);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var35);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var39);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var40);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var41);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var42 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var42.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var44);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var46);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var48);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var49);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var50 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var52);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var53);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var54 + "' != '" + ""+ "'", var54.equals(""));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var55 + "' != '" + ""+ "'", var55.equals(""));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var56 + "' != '" + ""+ "'", var56.equals(""));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var57);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var58 + "' != '" + ""+ "'", var58.equals(""));
+
+  }
+
+  public void test195() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test195");
+
+
+    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var3 = var1.withSkipHeaderRecord();
+    boolean var4 = var1.isCommentMarkerSet();
+    java.lang.Character var5 = var1.getQuoteCharacter();
+    org.apache.commons.csv.CSVFormat var6 = var1.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var8 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var9 = var8.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var10 = var8.withSkipHeaderRecord();
+    java.lang.String var11 = var10.toString();
+    org.apache.commons.csv.CSVFormat var13 = var10.withNullString("");
+    org.apache.commons.csv.CSVFormat var15 = var10.withIgnoreSurroundingSpaces(true);
+    org.apache.commons.csv.CSVFormat var17 = var10.withNullString("Delimiter=< > EmptyLines:ignored SkipHeaderRecord:false");
+    boolean var18 = var6.equals((java.lang.Object)var17);
+    org.apache.commons.csv.CSVFormat var20 = var6.withDelimiter('4');
+    org.apache.commons.csv.CSVFormat var22 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var23 = var22.withIgnoreSurroundingSpaces();
+    java.lang.Character var24 = var22.getCommentMarker();
+    java.lang.String var25 = var22.getNullString();
+    org.apache.commons.csv.CSVFormat var26 = var22.withIgnoreSurroundingSpaces();
+    org.apache.commons.csv.CSVFormat var28 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var29 = var28.withAllowMissingColumnNames();
+    boolean var30 = var28.isNullStringSet();
+    java.lang.String[] var32 = new java.lang.String[] { ""};
+    org.apache.commons.csv.CSVFormat var33 = var28.withHeader(var32);
+    org.apache.commons.csv.CSVFormat var35 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var36 = var35.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var37 = var35.withSkipHeaderRecord();
+    boolean var38 = var35.isCommentMarkerSet();
+    boolean var39 = var35.getIgnoreHeaderCase();
+    java.lang.String[] var41 = new java.lang.String[] { "Delimiter=< > SkipHeaderRecord:true"};
+    org.apache.commons.csv.CSVFormat var42 = var35.withHeader(var41);
+    org.apache.commons.csv.CSVFormat var44 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var45 = var44.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var46 = var44.withSkipHeaderRecord();
+    boolean var47 = var44.isCommentMarkerSet();
+    boolean var48 = var44.getIgnoreHeaderCase();
+    java.lang.String[] var50 = new java.lang.String[] { "Delimiter=< > SkipHeaderRecord:true"};
+    org.apache.commons.csv.CSVFormat var51 = var44.withHeader(var50);
+    org.apache.commons.csv.CSVFormat var52 = var35.withHeader(var50);
+    java.lang.String var53 = var33.format((java.lang.Object[])var50);
+    org.apache.commons.csv.CSVFormat var54 = var26.withHeader(var50);
+    java.lang.String var55 = var6.format((java.lang.Object[])var50);
+    java.lang.String[] var56 = var6.getHeader();
+    org.apache.commons.csv.CSVFormat var58 = var6.withEscape('a');
+    boolean var59 = var58.getSkipHeaderRecord();
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var11 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var11.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var18 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var22);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var29);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var30 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var35);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var36);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var38 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var39 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var41);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var42);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var44);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var45);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var46);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var47 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var48 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var50);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var51);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var52);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var53 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var53.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var54);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var55 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var55.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var56);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var58);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var59 == false);
+
+  }
+
+  public void test196() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test196");
+
+
+    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var2 = var1.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var4 = var1.withCommentMarker('#');
+    org.apache.commons.csv.CSVFormat var6 = var1.withNullString("Delimiter=< > SkipHeaderRecord:true");
+    org.apache.commons.csv.CSVFormat var8 = var6.withCommentMarker('#');
+    org.apache.commons.csv.CSVFormat var10 = var6.withIgnoreSurroundingSpaces(false);
+    org.apache.commons.csv.CSVFormat var12 = var6.withNullString("Default Excel MySQL RFC4180 TDF");
+    org.apache.commons.csv.CSVFormat var13 = var12.withIgnoreEmptyLines();
+    org.apache.commons.csv.CSVFormat var15 = var12.withRecordSeparator('a');
+    org.apache.commons.csv.CSVFormat var16 = var12.withSkipHeaderRecord();
+    org.apache.commons.csv.CSVFormat var18 = var12.withEscape('4');
+    org.apache.commons.csv.CSVFormat var19 = var12.withAllowMissingColumnNames();
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var4);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var16);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var19);
+
+  }
+
+  public void test197() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test197");
+
+
+    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    boolean var2 = var1.isCommentMarkerSet();
+    boolean var3 = var1.getIgnoreSurroundingSpaces();
+    org.apache.commons.csv.CSVFormat var5 = var1.withSkipHeaderRecord(false);
+    org.apache.commons.csv.CSVFormat var7 = var5.withDelimiter('a');
+    org.apache.commons.csv.CSVFormat var9 = var7.withNullString("#");
+    org.apache.commons.csv.CSVFormat var11 = var9.withDelimiter('#');
+    org.apache.commons.csv.CSVFormat var13 = var9.withEscape(' ');
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var2 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var3 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var13);
+
+  }
+
+  public void test198() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test198");
+
+
+    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var3 = var1.withSkipHeaderRecord();
+    boolean var4 = var1.isCommentMarkerSet();
+    java.lang.Character var5 = var1.getQuoteCharacter();
+    org.apache.commons.csv.CSVFormat var6 = var1.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var8 = var1.withIgnoreEmptyLines(true);
+    org.apache.commons.csv.CSVFormat var10 = var1.withIgnoreEmptyLines(true);
+    org.apache.commons.csv.CSVFormat var12 = var1.withDelimiter(' ');
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var8);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var12);
+
+  }
+
+  public void test199() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test199");
+
+
+    org.apache.commons.csv.CSVFormat var1 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var2 = var1.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var3 = var1.withSkipHeaderRecord();
+    boolean var4 = var1.isCommentMarkerSet();
+    boolean var5 = var1.getIgnoreHeaderCase();
+    java.lang.String[] var6 = var1.getHeaderComments();
+    org.apache.commons.csv.CSVFormat var7 = var1.withIgnoreSurroundingSpaces();
+    org.apache.commons.csv.CSVFormat var9 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var10 = var9.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var12 = var9.withCommentMarker('#');
+    org.apache.commons.csv.CSVFormat var14 = var9.withNullString("Delimiter=< > SkipHeaderRecord:true");
+    java.lang.Character var15 = var14.getCommentMarker();
+    org.apache.commons.csv.CSVFormat var17 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var18 = var17.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var20 = var17.withCommentMarker('#');
+    java.lang.String[] var21 = var17.getHeaderComments();
+    org.apache.commons.csv.CSVFormat var23 = var17.withQuote((java.lang.Character)'4');
+    org.apache.commons.csv.CSVFormat var25 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var26 = var25.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var27 = var25.withSkipHeaderRecord();
+    boolean var28 = var25.isCommentMarkerSet();
+    boolean var29 = var25.getIgnoreHeaderCase();
+    java.lang.String[] var31 = new java.lang.String[] { "Delimiter=< > SkipHeaderRecord:true"};
+    org.apache.commons.csv.CSVFormat var32 = var25.withHeader(var31);
+    org.apache.commons.csv.CSVFormat var33 = var17.withHeader(var31);
+    java.lang.String[] var34 = var17.getHeaderComments();
+    org.apache.commons.csv.CSVFormat var36 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var37 = var36.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var38 = var36.withSkipHeaderRecord();
+    java.lang.String var39 = var38.toString();
+    java.lang.String[] var40 = var38.getHeader();
+    org.apache.commons.csv.CSVFormat var41 = var38.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var43 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var44 = var43.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var45 = var43.withSkipHeaderRecord();
+    java.lang.String var46 = var45.toString();
+    org.apache.commons.csv.CSVFormat var48 = var45.withNullString("");
+    org.apache.commons.csv.CSVFormat var50 = var48.withEscape((java.lang.Character)'4');
+    org.apache.commons.csv.CSVFormat var52 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var53 = var52.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var54 = var52.withSkipHeaderRecord();
+    boolean var55 = var52.isCommentMarkerSet();
+    boolean var56 = var52.getIgnoreHeaderCase();
+    org.apache.commons.csv.CSVFormat var58 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var59 = var58.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var61 = var58.withCommentMarker('#');
+    org.apache.commons.csv.CSVFormat var63 = var58.withNullString("Delimiter=< > SkipHeaderRecord:true");
+    org.apache.commons.csv.CSVFormat var64 = var63.withIgnoreSurroundingSpaces();
+    java.lang.Object[] var65 = new java.lang.Object[] { var63};
+    java.lang.String var66 = var52.format(var65);
+    java.lang.String[] var68 = new java.lang.String[] { "Default Excel MySQL RFC4180 TDF"};
+    org.apache.commons.csv.CSVFormat var69 = var52.withHeader(var68);
+    org.apache.commons.csv.CSVFormat var70 = var48.withHeader(var68);
+    java.lang.String var71 = var41.format((java.lang.Object[])var68);
+    org.apache.commons.csv.CSVFormat var72 = var17.withHeader(var68);
+    org.apache.commons.csv.CSVFormat var73 = var14.withHeaderComments((java.lang.Object[])var68);
+    org.apache.commons.csv.CSVFormat var74 = var1.withHeader(var68);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var1);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var4 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var5 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var10);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var14);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var20);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var26);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var27);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var28 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var29 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var31);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var34);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var36);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var38);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var39 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var39.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var40);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var41);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var43);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var44);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var45);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var46 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var46.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var48);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var50);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var52);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var53);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var54);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var55 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var56 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var58);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var59);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var61);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var63);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var64);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var65);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var66 + "' != '" + "Delimiter=< > NullString=<Delimiter=< > SkipHeaderRecord:true> SkipHeaderRecord:false"+ "'", var66.equals("Delimiter=< > NullString=<Delimiter=< > SkipHeaderRecord:true> SkipHeaderRecord:false"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var68);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var69);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var70);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var71 + "' != '" + "Default Excel MySQL RFC4180 TDF"+ "'", var71.equals("Default Excel MySQL RFC4180 TDF"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var72);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var73);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var74);
+
+  }
+
+  public void test200() throws Throwable {
+
+    if (debug) System.out.printf("%nRandoopTest5.test200");
+
+
+    org.apache.commons.csv.CSVFormat var2 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var3 = var2.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var5 = var2.withNullString("");
+    org.apache.commons.csv.CSVFormat var6 = var2.withIgnoreEmptyLines();
+    java.lang.String[] var7 = var6.getHeaderComments();
+    org.apache.commons.csv.CSVFormat var9 = var6.withIgnoreSurroundingSpaces(false);
+    org.apache.commons.csv.CSVFormat var11 = var6.withRecordSeparator('4');
+    org.apache.commons.csv.CSVFormat.Predefined[] var12 = org.apache.commons.csv.CSVFormat.Predefined.values();
+    org.apache.commons.csv.CSVFormat var13 = var11.withHeaderComments((java.lang.Object[])var12);
+    org.apache.commons.csv.CSVFormat var15 = var11.withIgnoreHeaderCase(false);
+    org.apache.commons.csv.CSVFormat var17 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var18 = var17.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var19 = var17.withSkipHeaderRecord();
+    org.apache.commons.csv.CSVFormat var21 = var19.withIgnoreSurroundingSpaces(true);
+    org.apache.commons.csv.CSVFormat var23 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var24 = var23.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var25 = var23.withSkipHeaderRecord();
+    java.lang.String var26 = var25.toString();
+    org.apache.commons.csv.CSVFormat var28 = var25.withNullString("");
+    org.apache.commons.csv.CSVFormat var30 = var25.withIgnoreSurroundingSpaces(true);
+    org.apache.commons.csv.CSVFormat var32 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var33 = var32.withAllowMissingColumnNames();
+    boolean var34 = var32.isNullStringSet();
+    java.lang.String[] var36 = new java.lang.String[] { ""};
+    org.apache.commons.csv.CSVFormat var37 = var32.withHeader(var36);
+    java.lang.String var38 = var30.format((java.lang.Object[])var36);
+    java.lang.String var39 = var21.format((java.lang.Object[])var36);
+    org.apache.commons.csv.CSVFormat var40 = var15.withHeader(var36);
+    org.apache.commons.csv.CSVFormat var42 = var40.withIgnoreSurroundingSpaces(true);
+    org.apache.commons.csv.CSVFormat var44 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    java.lang.String var45 = var44.getRecordSeparator();
+    org.apache.commons.csv.CSVFormat var47 = var44.withCommentMarker('#');
+    org.apache.commons.csv.CSVFormat var49 = var44.withNullString("Delimiter=< > SkipHeaderRecord:true");
+    java.lang.Character var50 = var49.getCommentMarker();
+    org.apache.commons.csv.QuoteMode var51 = var49.getQuoteMode();
+    org.apache.commons.csv.CSVFormat var53 = var49.withEscape((java.lang.Character)'a');
+    boolean var54 = var53.getIgnoreHeaderCase();
+    org.apache.commons.csv.CSVFormat var56 = org.apache.commons.csv.CSVFormat.newFormat(' ');
+    org.apache.commons.csv.CSVFormat var57 = var56.withAllowMissingColumnNames();
+    org.apache.commons.csv.CSVFormat var58 = var56.withSkipHeaderRecord();
+    boolean var59 = var56.isCommentMarkerSet();
+    boolean var60 = var56.getIgnoreHeaderCase();
+    java.lang.String[] var62 = new java.lang.String[] { "Delimiter=< > SkipHeaderRecord:true"};
+    org.apache.commons.csv.CSVFormat var63 = var56.withHeader(var62);
+    org.apache.commons.csv.CSVFormat var64 = var53.withHeaderComments((java.lang.Object[])var62);
+    org.apache.commons.csv.CSVFormat var65 = var42.withHeader(var62);
+    org.apache.commons.csv.CSVParser var66 = org.apache.commons.csv.CSVParser.parse("Delimiter=< > SkipHeaderRecord:false Header:[Delimiter=< > SkipHeaderRecord:true]", var42);
+    long var67 = var66.getRecordNumber();
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var2);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var3);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var5);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var6);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var7);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var9);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var11);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var12);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var13);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var15);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var17);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var18);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var19);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var21);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var23);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var24);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var25);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var26 + "' != '" + "Delimiter=< > SkipHeaderRecord:true"+ "'", var26.equals("Delimiter=< > SkipHeaderRecord:true"));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var28);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var30);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var32);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var33);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var34 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var36);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var37);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var38 + "' != '" + ""+ "'", var38.equals(""));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue("'" + var39 + "' != '" + ""+ "'", var39.equals(""));
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var40);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var42);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var44);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var45);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var47);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var49);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var50);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNull(var51);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var53);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var54 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var56);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var57);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var58);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var59 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var60 == false);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var62);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var63);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var64);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var65);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertNotNull(var66);
+    
+    // Regression assertion (captures the current behavior of the code)
+    assertTrue(var67 == 0L);
 
   }
 

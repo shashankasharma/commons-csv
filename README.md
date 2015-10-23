@@ -73,8 +73,12 @@ Tools Used:
 
 MILESTONE COMPONENTS
 --------------------
-1. Unit Tests and Coverage
-2. Advanced Testing Technique
+1. Unit Tests and Coverage  
+We used cobertura to report the coverage obtained on running the standard unit tests provided in the target project. The coverage results for thee unit test is:  
+
+2. Advanced Testing Technique  
+We extended the coverage using an external test case generation plugin, Randoop. Randoop is installed on Eclipse, and is used to create multiple random testcases.
+
 3. Base Analysis
 4. Extended Analysis
 5. Testing Gate

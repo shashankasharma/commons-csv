@@ -35,7 +35,6 @@ exec("tail -1 " + pathdir + "/codeanalysis.result", function(error, stdout, stde
 						new_curl('http://localhost:8080/job/'+jobname+'/lastBuild/api/json',function(err) {
 					    	var responsebody = JSON.parse(this.body);
 					    	var status = responsebody['result'];
-					    	var username = responsebody['culprits'][0]['absoluteUrl'];
 					    	console.log('Build Status: ' + status);
 					    	if(status=='FAILURE'){
 								console.log("BUILD STATUS: FAILURE\nReverting commit by a step.")

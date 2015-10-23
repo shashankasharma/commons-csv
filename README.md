@@ -57,6 +57,20 @@ Shashanka Sharma (srsharma)
 Jitesh Mohan (jitesh)  
 Sheenam Mittal (smittal3)  
 
+###Tools Used
+1. Jenkins
+2. Eclipse
+3. Git
+
+###TEST SECTION
+Tools Used:  
+1. Cobertura (Jenkins Plugin)  
+2. Randoop (Eclipse Plugin)  
+
+###ANALYSIS SECTION
+Tools Used:  
+1. Findbugs (Jenkins Plugin)  
+
 MILESTONE COMPONENTS
 --------------------
 1. Unit Tests and Coverage

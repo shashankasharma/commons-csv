@@ -81,6 +81,8 @@ We extended the coverage using an external test case generation plugin, Randoop.
 
 3. Base Analysis
 4. Extended Analysis
+Implemented a new analysis from scratch which gives a detailed report on the ratio of the total number of code lines to the total comments for each file. It then compares this ratio against a threshold which we have set to 10%. This implies that for every 10 lines of code there is atleast 1 comment.
+
 5. Testing Gate
 6. Analysis Gate
 7. Security Token Gate

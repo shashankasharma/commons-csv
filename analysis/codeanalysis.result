@@ -114,13 +114,11 @@ Filename: ../commons-csv/src/test/java/org/apache/commons/csv/CSVFormatTest.java
 # of comments: 26
 # of code lines: 363
 #Total # of lines: 457
-Comment to code ratio: 7.0
 
 Filename: ../commons-csv/src/test/java/org/apache/commons/csv/CSVPrinterTest.java
 # of comments: 34
 # of code lines: 550
 #Total # of lines: 653
-Comment to code ratio: 6.0
 
 Filename: ../commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java
 # of comments: 98
@@ -186,13 +184,11 @@ Filename: ../directory-kerby/kerby-config/src/main/java/org/apache/kerby/config/
 # of comments: 19
 # of code lines: 265
 #Total # of lines: 342
-Comment to code ratio: 7.0
 
 Filename: ../directory-kerby/kerby-config/src/main/java/org/apache/kerby/config/ConfigImpl.java
 # of comments: 22
 # of code lines: 339
 #Total # of lines: 422
-Comment to code ratio: 6.0
 
 Filename: ../directory-kerby/kerby-config/src/main/java/org/apache/kerby/config/JsonConfigLoader.java
 # of comments: 19
@@ -288,7 +284,6 @@ Filename: ../directory-kerby/kerby-tool/kdc-tool/src/main/java/org/apache/kerby/
 # of comments: 21
 # of code lines: 211
 #Total # of lines: 250
-Comment to code ratio: 9.0
 
 Filename: ../directory-kerby/kerby-tool/kdc-tool/src/main/java/org/apache/kerby/kerberos/tool/kadmin/command/DeletePrincipalCommand.java
 # of comments: 19
@@ -814,7 +809,6 @@ Filename: ../directory-kerby/kerby-backend/zookeeper-backend/src/main/java/org/a
 # of comments: 19
 # of code lines: 302
 #Total # of lines: 346
-Comment to code ratio: 6.0
 
 Filename: ../directory-kerby/kerby-backend/zookeeper-backend/src/main/java/org/apache/kerby/kerberos/kdc/identitybackend/ZKConfKey.java
 # of comments: 23
@@ -1535,7 +1529,6 @@ Filename: ../directory-kerby/kerby-kerb/kerb-util/src/main/java/org/apache/kerby
 # of comments: 20
 # of code lines: 228
 #Total # of lines: 300
-Comment to code ratio: 8.0
 
 Filename: ../directory-kerby/kerby-kerb/kerb-util/src/main/java/org/apache/kerby/kerberos/kerb/ccache/CredCacheOutputStream.java
 # of comments: 19
@@ -3576,7 +3569,6 @@ Filename: ../commons-io/src/test/java/org/apache/commons/io/FileSystemUtilsTestC
 # of comments: 41
 # of code lines: 488
 #Total # of lines: 574
-Comment to code ratio: 8.0
 
 Filename: ../commons-io/src/test/java/org/apache/commons/io/DirectoryWalkerTestCaseJava4.java
 # of comments: 150
@@ -4057,7 +4049,6 @@ Filename: ../commons-io/src/test/java/org/apache/commons/io/output/ProxyWriterTe
 # of comments: 21
 # of code lines: 285
 #Total # of lines: 339
-Comment to code ratio: 7.0
 
 Filename: ../commons-io/src/test/java/org/apache/commons/io/output/ChunkedWriterTest.java
 # of comments: 16
@@ -4074,4 +4065,4 @@ Filename: ../DevOps-HW2/node_modules/node-gyp/src/win_delay_load_hook.c
 # of code lines: 17
 #Total # of lines: 33
 
-STATUS: FAILURE
+STATUS: SUCCESS

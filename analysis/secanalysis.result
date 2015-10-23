@@ -1,3 +1,6 @@
 Running security analysis:
 
-STATUS: SUCCESS
+Filename: ../directory-kerby/kerby-kerb/kerb-crypto/src/test/java/org/apache/kerby/kerberos/kerb/crypto/CheckSumsTest.java
+Line number: 89
+
+STATUS: FAILURE

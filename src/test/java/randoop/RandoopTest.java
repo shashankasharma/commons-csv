@@ -24,7 +24,6 @@ public class RandoopTest extends TestCase {
     result.addTest(new TestSuite(RandoopTest3.class));
     result.addTest(new TestSuite(RandoopTest4.class));
     result.addTest(new TestSuite(RandoopTest5.class));
-    result.addTest(new TestSuite(randoopFailures.RandoopTest_failure_1.class));
     return result;
   }
 

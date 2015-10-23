@@ -81,8 +81,13 @@ We extended the coverage using an external test case generation plugin, Randoop.
 
 3. Base Analysis
 4. Extended Analysis
-Implemented a new analysis from scratch which gives a detailed report on the ratio of the total number of code lines to the total comments for each file. It then compares this ratio against a threshold which we have set to 10%. This implies that for every 10 lines of code there is atleast 1 comment.
+Implemented a new analysis from scratch which gives a detailed report on the ratio of the total number of code lines to the total comments for each file. It then compares this ratio against a threshold.The analysis is implemented via a script written in Python which reports the results to console as well as writes it to a file.
 
 5. Testing Gate
+We have implemented 2 testing gates. 
+ 1.  
+ 2. Once both checks of the previous step pass we initiate a build on Jenkins.
+ 3. 
 6. Analysis Gate
+
 7. Security Token Gate

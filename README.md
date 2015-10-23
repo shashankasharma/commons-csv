@@ -84,10 +84,10 @@ We extended the coverage using an external test case generation plugin, Randoop.
 Implemented a new analysis from scratch which gives a detailed report on the ratio of the total number of code lines to the total comments for each file. It then compares this ratio against a threshold.The analysis is implemented via a script written in Python which reports the results to console as well as writes it to a file.
 
 5. Testing Gate
-We have implemented 2 testing gates. 
- 1.  
- 2. Once both checks of the previous step pass we initiate a build on Jenkins.
- 3. 
+The build fails if the coverage is less than a sepcified minimum, because for our project the coverage was very high we tried with 97% for conditions which was 92% coverage and the build failed.
+
 6. Analysis Gate
+For this part we have found the code to comment ratio and if the ratio is below a given thresh hold, 10% for us, the build will fail. We wrote a pre-push hook to reject the commit for this case.
 
 7. Security Token Gate
+If any of the files in project is has an extension .pem, .key  or if the files contains api keys or tokens the build fails. The check for these consitions is written using a python script and pre push hook. 

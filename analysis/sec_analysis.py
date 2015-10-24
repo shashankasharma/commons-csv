@@ -26,7 +26,7 @@ for (dirpath, dirnames, filenames) in walk(mypath):
         keyfilelist.append(os.path.join(dirpath,filename))
 
 doregex = re.compile('([A-Z0-9]{64})[\s\'\"\;\)\]\}]*$')
-awsregex = re.compile('([A-Z]*[0-9][A-Z0-9]+)[\s\'\"\;\)\]\}]*$')
+awsregex = re.compile('([A-Za-z\/]*[0-9][a-zA-Z0-9\/]+)[\s\'\"\;\)\]\}]*$')
 for filename in filelist:
     filetype = filename.split('.')[-1]
     linenum = 0

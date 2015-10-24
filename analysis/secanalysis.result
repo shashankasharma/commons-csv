@@ -1,4 +1,7 @@
 
 Running security analysis:
 
-STATUS: SUCCESS
+Filename: ./awskey.java
+Line number: 1
+
+STATUS: FAILURE

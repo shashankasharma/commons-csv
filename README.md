@@ -115,3 +115,182 @@ Screencast of failure based on the presence of keyfile or key tokens:
 [![IMAGE Build Failure due to security analysis](http://img.youtube.com/vi/700yRmC2um8/0.jpg)](https://www.youtube.com/watch?v=700yRmC2um8&feature=youtu.be)  
 Screencast of successful build:  
 [![IMAGE Build Success](http://img.youtube.com/vi/pA_oqnlFUt8/0.jpg)](https://www.youtube.com/watch?v=pA_oqnlFUt8&feature=youtu.be)
+
+### Code section
+#### pre-push hook
+```#!/bin/sh
+
+python "$(git rev-parse --show-toplevel)/analysis/code_analysis.py" $(git rev-parse --show-toplevel) 0
+python "$(git rev-parse --show-toplevel)/analysis/sec_analysis.py" $(git rev-parse --show-toplevel)
+cd "$(git rev-parse --show-toplevel)/analysis"
+rm -rf node_modules
+npm install
+cd ../
+nodejs "$(git rev-parse --show-toplevel)/analysis/build.js"
+if [ $? = 1 ]
+    then
+        rm -rf analysis/node_modules
+        exit 1
+fi
+rm -rf analysis/node_modules
+exit 0
+```  
+#### Code Analysis Script
+```
+from os import walk
+import sys, os
+import fnmatch
+
+print '\n\nRunning code analysis to check comment to code ratio:'
+
+mypath = os.getcwd()
+if len(sys.argv)>=2 and os.path.exists(sys.argv[1]):
+    mypath = sys.argv[1]
+
+threshold = 10
+if len(sys.argv)>=3 and sys.argv[2].isdigit():
+    threshold = int(sys.argv[2])
+
+filelist = []
+for (dirpath, dirnames, filenames) in walk(mypath):
+    for filename in fnmatch.filter(filenames, '*.c'):
+        filelist.append(os.path.join(dirpath,filename))
+    for filename in fnmatch.filter(filenames, '*.cpp'):
+        filelist.append(os.path.join(dirpath,filename))
+    for filename in fnmatch.filter(filenames, '*.java'):
+        filelist.append(os.path.join(dirpath,filename))
+
+comment_dict = {'c':{'single':'//','multi':'/*'},'cpp':{'single':'//','multi':'/*'},'java':{'single':'//','multi':'/*'}}
+
+outfile = os.path.dirname(os.path.abspath(sys.argv[0]))
+print 'Writing output to: {}/codeanalysis.result'.format(outfile)
+with open(outfile + '/codeanalysis.result','w') as fp:
+    failflag = False
+    filecontent = 'Code analysis result:\n'
+    for filename in filelist:
+        filetype = filename.split('.')[-1]
+        single = 'single'
+        multi = 'multi'
+        codecount = 0
+        linecount = 0
+        commentflag = False
+        commentcount = 0
+        with open(filename) as f:
+            for eachline in f:
+                eachline = eachline.lstrip().rstrip()
+                linecount+=1
+                if len(eachline) == 0:
+                    continue
+                if eachline.startswith(comment_dict[filetype][multi]):
+                    if eachline.endswith(comment_dict[filetype][multi][::-1]):
+                        commentcount+=1
+                        continue
+                    else:
+                        commentcount+=1
+                        commentflag=True
+                        continue
+                if eachline.endswith(comment_dict[filetype][multi][::-1]):
+                    commentflag = False
+                    commentcount+=1
+                    continue
+                elif eachline.find(comment_dict[filetype][multi][::-1])!=-1:
+                    commentflag = False
+                    commentcount+=1
+                    codecount+=1
+                if commentflag:
+                    commentcount+=1
+                    continue
+                if eachline.startswith(comment_dict[filetype][single]):
+                    commentcount+=1
+                    continue
+                if eachline.find(comment_dict[filetype][single])!=-1:
+                    commentcount+=1
+                    codecount+=1
+                    continue
+                codecount+=1
+        if commentcount*100/codecount < threshold:
+            print 'Comment to code ratio is lesser than',threshold
+            print 'Filename:',filename
+            print "\t# of comments:",commentcount
+            print "\t# of lines of code:",codecount
+            print "\tTotal # of lines:",linecount
+        commratio = float(commentcount*100/codecount)
+        filecontent = filecontent + '\n' + 'Filename: {}\n# of comments: {}\n# of code lines: {}\n#Total # of lines: {}\n'.format(
+            filename, commentcount, codecount, linecount)
+        if commratio < threshold:
+            failflag = True
+            filecontent = filecontent + 'Comment to code ratio: {}\n'.format(commratio)
+            print '\tComment to code ratio: {}\n'.format(commratio)
+    if failflag:
+        print '\nSTATUS: FAILURE'
+        filecontent = filecontent + '\nSTATUS: FAILURE'
+    else:
+        print '\nSTATUS: SUCCESS'
+        filecontent = filecontent + '\nSTATUS: SUCCESS'
+    fp.write(filecontent)
+```  
+#### Security analysis script
+```
+    from os import walk
+import sys, os, fnmatch, re
+
+mypath = ''
+if len(sys.argv)==2 and os.path.exists(sys.argv[1]):
+    mypath = sys.argv[1]
+else:
+    mypath = os.getcwd()
+
+filelist = []
+keyfilelist = []
+opbufferinit = '\nRunning security analysis:'
+opbuffer = ''
+for (dirpath, dirnames, filenames) in walk(mypath):
+    for filename in fnmatch.filter(filenames, '*.c'):
+        filelist.append(os.path.join(dirpath,filename))
+    for filename in fnmatch.filter(filenames, '*.cpp'):
+        filelist.append(os.path.join(dirpath,filename))
+    for filename in fnmatch.filter(filenames, '*.java'):
+        filelist.append(os.path.join(dirpath,filename))
+    for filename in fnmatch.filter(filenames, '*.json'):
+        filelist.append(os.path.join(dirpath,filename))
+    for filename in fnmatch.filter(filenames, '*.key'):
+        keyfilelist.append(os.path.join(dirpath,filename))
+    for filename in fnmatch.filter(filenames, '*.pem'):
+        keyfilelist.append(os.path.join(dirpath,filename))
+
+doregex = re.compile('([A-Z0-9]{64})[\s\'\"\;\)\]\}]*$')
+awsregex = re.compile('([A-Z]*[0-9][A-Z0-9]+)[\s\'\"\;\)\]\}]*$')
+for filename in filelist:
+    filetype = filename.split('.')[-1]
+    linenum = 0
+    with open(filename) as f:
+        for eachline in f:
+            linenum+=1
+            eachline = eachline.lstrip().rstrip()
+            if len(doregex.findall(eachline)):
+                opbuffer+='\n\n' + 'Filename: {}\nLine number: {}'.format(filename, linenum)
+                break
+            elif len(awsregex.findall(eachline)):
+                flag = False
+                for eachtoken in awsregex.findall(eachline):
+                    if len(eachtoken) == 40:
+                        opbuffer+='\n\n' + 'Filename: {}\nLine number: {}'.format(filename, linenum)
+                        flag = True
+                        break
+                if flag:
+                    break
+if len(keyfilelist):
+    opbuffer+="\n\nFound files with security keys."
+    for eachfile in keyfilelist:
+        opbuffer+='\n' + 'Filename: {}'.format(eachfile)
+    opbuffer+="\n\nPlease remove these files before pushing changes."
+
+with open(os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])),'secanalysis.result'),'w') as opfile:
+    opfile.write(opbufferinit)
+    if len(opbuffer) or len(keyfilelist):
+        opbuffer+='\n\nSTATUS: FAILURE'
+    else:
+        opbuffer+='\n\nSTATUS: SUCCESS'
+    opfile.write(opbuffer)
+print opbufferinit + opbuffer + '\n'
+```  

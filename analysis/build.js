@@ -12,7 +12,7 @@ exec("tail -1 " + pathdir + "/codeanalysis.result", function(error, stdout, stde
 			status = false
 		}
 		console.log('status now1: ' + status);
-		exec("tail -1 " + pathdir + "secanalysis.result", function(error, stdout, stderr){
+		exec("tail -1 " + pathdir + "/secanalysis.result", function(error, stdout, stderr){
 			if(!error){
 				var resline = stdout.split(':');
 				var stat = resline[resline.length-1].replace(' ','');

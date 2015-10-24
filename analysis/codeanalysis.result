@@ -84,6 +84,7 @@ Filename: /home/srsharma/Studies/sem3/csc591/commons-csv/src/test/java/randoop/R
 # of comments: 0
 # of code lines: 25
 #Total # of lines: 30
+Comment to code ratio: 0.0
 
 Filename: /home/srsharma/Studies/sem3/csc591/commons-csv/src/test/java/randoop/RandoopTest2.java
 # of comments: 8122
@@ -149,11 +150,13 @@ Filename: /home/srsharma/Studies/sem3/csc591/commons-csv/src/test/java/org/apach
 # of comments: 26
 # of code lines: 363
 #Total # of lines: 457
+Comment to code ratio: 7.0
 
 Filename: /home/srsharma/Studies/sem3/csc591/commons-csv/src/test/java/org/apache/commons/csv/CSVPrinterTest.java
 # of comments: 34
 # of code lines: 550
 #Total # of lines: 653
+Comment to code ratio: 6.0
 
 Filename: /home/srsharma/Studies/sem3/csc591/commons-csv/src/test/java/org/apache/commons/csv/CSVParserTest.java
 # of comments: 98
@@ -170,4 +173,4 @@ Filename: /home/srsharma/Studies/sem3/csc591/commons-csv/src/test/java/org/apach
 # of code lines: 94
 #Total # of lines: 132
 
-STATUS: SUCCESS
+STATUS: FAILURE

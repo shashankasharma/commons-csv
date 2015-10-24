@@ -71,16 +71,17 @@ with open(outfile + '/codeanalysis.result','w') as fp:
                 codecount+=1
         if commentcount*100/codecount < threshold:
             print 'Comment to code ratio is lesser than',threshold
-            print '\tFilename:',filename
-            print "\t\t# of comments:",commentcount
-            print "\t\t# of lines of code:",codecount
-            print "\t\tTotal # of lines:",linecount
+            print 'Filename:',filename
+            print "\t# of comments:",commentcount
+            print "\t# of lines of code:",codecount
+            print "\tTotal # of lines:",linecount
         commratio = float(commentcount*100/codecount)
         filecontent = filecontent + '\n' + 'Filename: {}\n# of comments: {}\n# of code lines: {}\n#Total # of lines: {}\n'.format(
             filename, commentcount, codecount, linecount)
         if commratio < threshold:
             failflag = True
             filecontent = filecontent + 'Comment to code ratio: {}\n'.format(commratio)
+            print '\tComment to code ratio: {}\n'.format(commratio)
     if failflag:
         print '\nSTATUS: FAILURE'
         filecontent = filecontent + '\nSTATUS: FAILURE'

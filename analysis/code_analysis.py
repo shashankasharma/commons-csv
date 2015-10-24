@@ -2,7 +2,7 @@ from os import walk
 import sys, os
 import fnmatch
 
-print 'Running code analysis to check comment to code ratio\n'
+print '\n\nRunning code analysis to check comment to code ratio:'
 
 mypath = os.getcwd()
 if len(sys.argv)>=2 and os.path.exists(sys.argv[1]):
@@ -24,7 +24,7 @@ for (dirpath, dirnames, filenames) in walk(mypath):
 comment_dict = {'c':{'single':'//','multi':'/*'},'cpp':{'single':'//','multi':'/*'},'java':{'single':'//','multi':'/*'}}
 
 outfile = os.path.dirname(os.path.abspath(sys.argv[0]))
-print 'Writing output to: {}/codeanalysis.result\n'.format(outfile)
+print 'Writing output to: {}/codeanalysis.result'.format(outfile)
 with open(outfile + '/codeanalysis.result','w') as fp:
     failflag = False
     filecontent = 'Code analysis result:\n'

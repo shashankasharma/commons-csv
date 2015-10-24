@@ -20,7 +20,7 @@ exec("tail -1 " + pathdir + "/codeanalysis.result", function(error, stdout, stde
 				}
 				if (status == true){
 					console.log('Initial code analysis passed.\nContinuing build.')
-					exec("basename `git rev-parse --show-toplevel`", function(error, stdout, stderr){
+					/*exec("basename `git rev-parse --show-toplevel`", function(error, stdout, stderr){
 						if (!error){
 							var jobname = stdout.replace('\n','');
 							curl('http://localhost:8080/job/'+jobname+'/build?delay=0sec',function(err) {
@@ -44,7 +44,7 @@ exec("tail -1 " + pathdir + "/codeanalysis.result", function(error, stdout, stde
 							    });
 							},60000);
 						}
-					});
+					});*/
 				}	
 				else{
 					console.log('Initial code analysis failure.\nAborting build.\nBUILD STATUS: FAILURE');

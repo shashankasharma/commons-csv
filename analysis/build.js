@@ -11,6 +11,7 @@ exec("tail -1 " + pathdir + "/codeanalysis.result", function(error, stdout, stde
 		if (stat == 'FAILURE'){
 			status = false
 		}
+		console.log('status now1: ' + status);
 		exec("tail -1 " + pathdir + "secanalysis.result", function(error, stdout, stderr){
 			if(!error){
 				var resline = stdout.split(':');
@@ -18,6 +19,7 @@ exec("tail -1 " + pathdir + "/codeanalysis.result", function(error, stdout, stde
 				if (stat == 'FAILURE'){
 					status = false
 				}
+				console.log('status now2: ' + status);
 				if (status == true){
 					console.log('Initial code analysis passed.\nContinuing build.')
 					/*exec("basename `git rev-parse --show-toplevel`", function(error, stdout, stderr){

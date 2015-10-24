@@ -110,4 +110,5 @@ For this part we have found the code to comment ratio and if the ratio is below 
 7. Security Token Gate
 If any of the files in project is has an extension .pem, .key  or if it contains api keys or tokens the push is rejected. The check for these conditions is written using a python script and pre push hook.
 
-https://github.com/shashankasharma/commons-csv/blob/trunk/images/build_failure_ext_analysis.mp4
+   https://github.com/shashankasharma/commons-csv/blob/trunk/images/build_failure_ext_analysis.mp4
+

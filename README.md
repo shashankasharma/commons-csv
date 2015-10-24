@@ -105,10 +105,13 @@ Screenshot capturing the Test Gate failure:
 ![Alt text](https://github.com/shashankasharma/commons-csv/blob/trunk/images/test_gate_failure.png)
 
 6. Analysis Gate
-For this part we have found the code to comment ratio and if the ratio is below a given thresh hold, 10% for us, the build will fail. We wrote a pre-push hook to reject the commit for this case.
+...For this part we have found the code to comment ratio and if the ratio is below a given thresh hold, 10% for us, the build will fail. We wrote a pre-push hook to reject the commit for this case.
+Screencast of failure based on the code to comment ratio:
+[![IMAGE Build Failure due to comment to code ratio](http://img.youtube.com/vi/Ti7vYmwPbRg/0.jpg)](https://www.youtube.com/watch?v=Ti7vYmwPbRg&feature=youtu.be)
 
 7. Security Token Gate
-If any of the files in project is has an extension .pem, .key  or if it contains api keys or tokens the push is rejected. The check for these conditions is written using a python script and pre push hook.
-
-   https://github.com/shashankasharma/commons-csv/blob/trunk/images/build_failure_ext_analysis.mp4
-
+...If any of the files in project is has an extension .pem, .key  or if it contains api keys or tokens the push is rejected. The check for these conditions is written using a python script and pre push hook.
+Screencast of failure based on the presence of keyfile or key tokens:
+[![IMAGE Build Failure due to security analysis](http://img.youtube.com/vi/700yRmC2um8/0.jpg)](https://www.youtube.com/watch?v=700yRmC2um8&feature=youtu.be)  
+Screencast of successful build:
+[![IMAGE Build Success](http://img.youtube.com/vi/pA_oqnlFUt8/0.jpg)](https://www.youtube.com/watch?v=pA_oqnlFUt8&feature=youtu.be)

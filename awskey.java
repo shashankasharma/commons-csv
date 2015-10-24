@@ -1,1 +1,1 @@
-var awskey = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+var awskey = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEkey'

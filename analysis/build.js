@@ -8,6 +8,7 @@ exec("tail -1 " + pathdir + "/codeanalysis.result", function(error, stdout, stde
 	if(!error){
 		var resline = stdout.split(':');
 		var stat = resline[resline.length-1].replace(' ','');
+		console.log('Stat on code analysis' + stat);
 		if (stat == 'FAILURE'){
 			status = false
 		}
@@ -16,11 +17,11 @@ exec("tail -1 " + pathdir + "/codeanalysis.result", function(error, stdout, stde
 		if(!error){
 			var resline = stdout.split(':');
 			var stat = resline[resline.length-1].replace(' ','');
+			console.log('Stat on sec analysis' + stat);
 			if (stat == 'FAILURE'){
 				status = false
 			}
 		}
-		
 		if (status == true){
 			console.log('Initial code analysis passed.\nContinuing build.')
 			exec("basename `git rev-parse --show-toplevel`", function(error, stdout, stderr){

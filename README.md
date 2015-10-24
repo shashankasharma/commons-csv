@@ -76,9 +76,10 @@ MILESTONE COMPONENTS
 --------------------
 1. Unit Tests and Coverage  
 We used cobertura to report the coverage obtained on running the standard unit tests provided in the target project. The coverage results for thee unit test is:  
-
+![Alt text](https://github.com/shashankasharma/commons-csv/blob/trunk/images/initial_coverage.png)
 2. Advanced Testing Technique  
-We extended the coverage using an external test case generation plugin, Randoop. Randoop is installed on Eclipse, and is used to create multiple random testcases.
+We extended the coverage using an external test case generation plugin, Randoop. Randoop is installed on Eclipse, and is used to create multiple random testcases. The genaration report for randoop is:
+![Alt text](https://github.com/shashankasharma/commons-csv/blob/trunk/images/randoop_generation.png)
 
 3. Base Analysis
 We use the Jenkins plugin namely findbugs to perform static analysis on the project.
